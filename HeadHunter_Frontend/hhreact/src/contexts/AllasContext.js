@@ -26,13 +26,11 @@ export const getAllasTapasztalat = (allas_id)=>
 //új és szerkesztés - fejvadász és admin
 
 //allas   
+export const postAllas = (params)=>
+    axios.post(`/api/jobs/new`, params);
 
-export const postAllas = (params, config)=>
-    axios.post(`/api/jobs/new`, params, config);
-
-export const putAllas = (allas_id, params, config)=>
-    axios.put(`/api/jobs/modification/${allas_id}`, params, config);
-
+export const putAllas = (allas_id, params)=>
+    axios.put(`/api/jobs/modification/${allas_id}`, params);
 
 //allas-ismeret    
 export const postAllaskerIsmeret = (params)=>
@@ -64,8 +62,8 @@ export const putAllasTapasztalat = (allas_id, params)=>
 
 //allas-jelentkezo
 
-export const getAllasJelentkezoAll = (config)=>
-    axios.get(`/api/jobs/applicants-all`, config);
+export const getAllasJelentkezoAll = ()=>
+    axios.get(`/api/jobs/applicants-all`);
 
 export const getAllasJelentkezok = (allas_id)=>
     axios.get(`/api/jobs/${allas_id}/applicants`);
@@ -78,8 +76,8 @@ export const postAllaskerJelentkezes = (allas_id, config)=>
 export const postAllasJelentkezo = (allas_id, allaskereso, config)=>
     axios.post(`/api/jobs/applicants/new`, {allas: allas_id, allaskereso: allaskereso}, config);
 
-export const putAllasJelentkezo = (allas_id, user_id, statusz, config)=>
-    axios.put(`/api/jobs/${allas_id}/applicants/${user_id}/modification`, {statusz}, config);
+export const putAllasJelentkezo = (allas_id, params)=>
+    axios.put(`/api/jobs/${allas_id}/applicants/modification`, params);
 
 
 

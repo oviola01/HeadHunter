@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AllasAlap from "../components/allas/AllasAlap";
 import JelentkezesGomb from "../components/allas/JelentkezesGomb";
 import VisszaLink from "../components/menu/VisszaLink";
@@ -33,10 +33,10 @@ export default function AllasAdatlap() {
           )}
         </div>
         <div className="handling-buttons">
-          {user && (isAdmin() || isHeadhunter()) && (
+          {/* {user && (isAdmin() || isHeadhunter()) && (
             <button>Szerkeszt</button>
           )}
-          {user && isAdmin() && (<button>Töröl</button>)}
+          {user && isAdmin() && (<button>Töröl</button>)} */}
         </div>
         <VisszaLink />
       </div>
