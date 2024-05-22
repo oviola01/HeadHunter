@@ -77,7 +77,7 @@ export const postAllasJelentkezo = (allas_id, allaskereso, config)=>
     axios.post(`/api/jobs/applicants/new`, {allas: allas_id, allaskereso: allaskereso}, config);
 
 export const putAllasJelentkezo = (allas_id, user_id, statusz, config)=>
-    axios.put(`/api/jobs/${allas_id}/applicants/${user_id}/modification`, {statusz}, config);
+    axios.put(`/api/jobs/applicants/modification/${allas_id}/${user_id}`, {statusz}, config);
 
 
 

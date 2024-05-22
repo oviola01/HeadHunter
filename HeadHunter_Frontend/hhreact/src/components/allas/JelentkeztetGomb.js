@@ -10,7 +10,7 @@ export default function JelentkeztetGomb(props) {
   const [kivalasztas, setKivalasztas] = useState(false);
   const [allaskerOptions, setAllaskerOptions] = useState([]);
   const [selectedAllasker, setSelectedAllasker] = useState(null);
-  const [allaskereso, setAllaskereso] = useState(null);
+  //const [allaskereso, setAllaskereso] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,7 +51,7 @@ export default function JelentkeztetGomb(props) {
   const handleOtherApply = async (e) => {
     e.preventDefault();
     try {
-      setAllaskereso(selectedAllasker.value);
+      const allaskereso= selectedAllasker.value;
       console.log("config: ");
       console.log(config);
       console.log("allas_id: ");

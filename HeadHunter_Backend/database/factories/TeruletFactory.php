@@ -17,7 +17,7 @@ class TeruletFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'terulet' => fake()->text(10),
         ];
     }
 }

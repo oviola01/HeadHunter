@@ -27,8 +27,8 @@ class UserFactory extends Factory
             'nev' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             //'email_verified_at' => now(),
-            'jelszo' => static::$password ??= Hash::make('jelszo'),
-            'jogosultsag' => fake()->text(),
+            'password' => static::$password ??= Hash::make('password'),
+            'jogosultsag' => 'álláskereső',
             //'remember_token' => Str::random(10),
         ];
     }

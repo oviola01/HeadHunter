@@ -13,14 +13,14 @@ class AllaskeresoIsmeretSeeder extends Seeder
     public function run(): void
     {
         // Példa adatok létrehozása és mentése
-        AllaskeresoIsmeret::create([
+      /*   AllaskeresoIsmeret::create([
             'allaskereso' => 1,
             'szakmai_ismeret' => 1,
-        ]);
-        AllaskeresoIsmeret::create([
+        ]); */
+        /* AllaskeresoIsmeret::create([
             'allaskereso' => 2,
             'szakmai_ismeret' => 2,
-        ]);
+        ]); */
         AllaskeresoIsmeret::create([
             'allaskereso' => 3,
             'szakmai_ismeret' => 3,
@@ -29,8 +29,12 @@ class AllaskeresoIsmeretSeeder extends Seeder
             'allaskereso' => 4,
             'szakmai_ismeret' => 2,
         ]);
-        AllaskeresoIsmeret::create([
+        /* AllaskeresoIsmeret::create([
             'allaskereso' => 5,
+            'szakmai_ismeret' => 2,
+        ]); */
+        AllaskeresoIsmeret::create([
+            'allaskereso' => 3,
             'szakmai_ismeret' => 2,
         ]);
         // További példa adatok hozzáadása...

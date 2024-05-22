@@ -68,6 +68,9 @@ Route::delete('/munkaltatok/{munkaltato_id}', [MunkaltatoController::class, 'des
 Route::put('/munkaltatok/{munkaltato_id}', [MunkaltatoController::class, 'update'])->whereNumber('munkaltato_id');
 //munkaltato tesztek vége
 
+Route::put('/jobs/applicants/modification/{allas_id}/{user_id}', [AllasJelentkezoController::class, 'update'])->whereNumber('allas_id')->whereNumber('user_id');
+
+
 Route::middleware('auth')->group(function () {
     // bejelentkezett felhasználók
     Route::post('/user/profile/image', [UserController::class, 'uploadImage']);
@@ -137,7 +140,6 @@ Route::middleware('auth')->group(function () {
         Route::get('/jobs/{allas_id}/applicants', [AllasJelentkezoController::class, 'detailedAllasJelentkezok'])->whereNumber('allas_id');
         Route::get('/jobs/applicants/{user_id}', [AllasJelentkezoController::class, 'detailedAllaskerJelentkezesek'])->whereNumber('user_id');
         Route::post('/jobs/applicants/new', [AllasJelentkezoController::class, 'store']);
-        Route::put('/jobs/{allas_id}/applicants/{user_id}/modification', [AllasJelentkezoController::class, 'update'])->whereNumber('allas_id')->whereNumber('user_id');
         //allaskereso
         Route::get('/jobseekers-all', [AllaskeresoController::class, 'index']);
         Route::get('/jobseekers/{user_id}', [AllaskeresoController::class, 'show'])->whereNumber('user_id');

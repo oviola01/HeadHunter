@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Terulet;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,8 @@ class PozicioFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'terulet' => fake()->unique()->randomElement(Terulet::pluck('id')),
+            'pozicio' => fake()->text(15),
         ];
     }
 }
