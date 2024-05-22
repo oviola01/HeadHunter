@@ -57,9 +57,9 @@ export default function App() {
               <Route path="employers" element={<MunkaltatokLista />} />
               <Route path="jobseekers" element={<Allaskeresok />} />
               <Route path="jobs" element={<Allasok />} />
-              {/* Jövőbeli route-ok:
-              
               <Route path="applicants" element={<Jelentkezok />} />
+              {/* Jövőbeli route-ok:
+            
               <Route path="hired" element={<FelvettJelentkezok />} />
               */}
             </Route>
@@ -69,10 +69,11 @@ export default function App() {
               <Route path="employers" element={<MunkaltatokLista />} />
               <Route path="jobseekers" element={<Allaskeresok />} />
               <Route path="jobs" element={<Allasok />} />
+              <Route path="applicants" element={<Jelentkezok />} />
               <Route path="positions" element={<Poziciok />} />
 
               {/* Jövőbeli route-ok:*/
-              /*<Route path="applicants" element={<Jelentkezok />} />
+              /*
               <Route path="hired" element={<FelvettJelentkezok />} />
                  <Route path="headhunters" element={<Fejvadaszok />} />
               <Route path="fields" element={<Teruletek />} />
