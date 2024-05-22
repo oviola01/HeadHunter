@@ -17,6 +17,7 @@ import MunkaltatokLista from "./components/admin/MunkaltatokLista";
 import Allaskeresok from "./components/felhasznalo-kezeles/profil/components/Allaskeresok";
 import AllaskeresoAdatlap from "./components/felhasznalo-kezeles/profil/AllaskeresoAdatlap";
 import Allasok from "./components/admin/Allasok";
+import Jelentkezok from "./pages/Jelentkezok";
 import Poziciok from "./components/admin/Poziciok";
 
 
