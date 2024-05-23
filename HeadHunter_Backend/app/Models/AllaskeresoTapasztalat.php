@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class AllaskeresoTapasztalat extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = ['allaskereso', 'cegnev', 'pozicio'];
+/* 
     protected function setKeysForSaveQuery($query)
     {
         $query
@@ -21,7 +24,7 @@ class AllaskeresoTapasztalat extends Model
 
 
         return $query;
-    }   
+    }    */
 
     
     protected $fillable = [
