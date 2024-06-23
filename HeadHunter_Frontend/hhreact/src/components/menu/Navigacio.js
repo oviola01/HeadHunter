@@ -55,6 +55,7 @@ export default function Navigacio() {
           {user && isAdmin() && (
             <>
               <NavLink link="/admin/employers" title="Munkáltatók" />
+              <NavLink link="/admin/jobs" title="Állások" />
               <NavLink link="/admin/jobseekers" title="Álláskeresők" />
               <NavLink link="/admin/applicants" title="Jelentkezők" />
               <NavLink link="/admin/hired" title="Felvett jelentkezők" />
