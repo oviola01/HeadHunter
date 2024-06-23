@@ -11,7 +11,8 @@ class AllaskeresoNyelvtudas extends Model
 
     protected $table = 'allaskereso_nyelvtudass';
 
-
+    protected $primaryKey = ['allaskereso', 'nyelvtudas'];
+/* 
     protected function setKeysForSaveQuery($query)
     {
         $query
@@ -20,7 +21,7 @@ class AllaskeresoNyelvtudas extends Model
 
 
         return $query;
-    }
+    } */
     protected $fillable = [
         'allaskereso',
         'nyelvtudas',

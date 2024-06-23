@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class AllasVegzettseg extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'allas';
+    protected $primaryKey = ['allas', 'vegzettseg'];
     protected $fillable = [
         'allas',
         'vegzettseg',

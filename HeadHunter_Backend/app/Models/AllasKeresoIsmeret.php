@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class AllaskeresoIsmeret extends Model
 {
     use HasFactory;
-    protected function setKeysForSaveQuery($query)
+    protected $primaryKey = ['allaskereso', 'szakmai_ismeret'];
+
+    /* protected function setKeysForSaveQuery($query)
+
     {
         $query
             ->where('allaskereso', '=', $this->
@@ -18,7 +21,7 @@ class AllaskeresoIsmeret extends Model
 
 
         return $query;
-    }
+    } */
     protected $fillable = [
         'allaskereso',
         'szakmai_ismeret'

@@ -12,6 +12,9 @@ class AllaskeresoTanulmany extends Model
 
     protected $table = 'allaskereso_tanulmanys';
 
+    protected $primaryKey = ['allaskereso', 'intezmeny', 'szak'];
+
+/* 
     protected function setKeysForSaveQuery($query)
     {
         $query
@@ -20,7 +23,7 @@ class AllaskeresoTanulmany extends Model
             ->where('szak', '=', $this->getAttribute('szak'));
         return $query;
     }
-
+ */
 
     protected $fillable = [
         'allaskereso',

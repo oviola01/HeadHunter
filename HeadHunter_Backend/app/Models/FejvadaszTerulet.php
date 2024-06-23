@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class FejvadaszTerulet extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = ['fejvadasz', 'terulet'];
+/* 
     protected function setKeysForSaveQuery($query)
     {
         $query
@@ -18,7 +21,7 @@ class FejvadaszTerulet extends Model
 
 
         return $query;
-    }
+    } */
     protected $fillable = [
         'fejvadasz',
         'terulet',
